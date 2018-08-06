@@ -6,40 +6,43 @@
 <meta name=description content="SubPicture is a independent photo blog that depicts subculture worldwide.">
 <meta name=author content="Ryan Van Etten">
 <style>
-  ::-moz-selection { background:#ee0;color:#111 }
-       ::selection { background:#ee0;color:#111 }
-  html { 
-    font-family:sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;            
-    background-color:#efefef; color:#111;
+  ::-moz-selection { background: var(--bee); color: var(--nite) }
+       ::selection { background: var(--bee); color: var(--nite) }
+  :root {
+    --bee: #ee0;
+    --nite: #111;
+    --lite: #efefef;
+    background-color: var(--lite);
+    color: var(--nite);
+  }
+  html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
   body { margin:0 auto; font-size:1.25em; }
   .container { width:96%; max-width:1024px; margin:auto; }
-  
+
+  :link,
+  :visited { background-color: inherit; color: inherit }
+  :focus { outline-color: currentColor }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; }
   a:hover { text-decoration:underline }
-  
-  .site-header { margin:0; padding:.2em 0 .4em; }
-  .site-header, .site-header a { background-color:#efefef; color:#111; }
-  
-  article > :not(header) a:hover { text-decoration:none; background-color:#111; color:#efefef; }
-  .dark a:hover { text-decoration:none; background-color:#efefef; color:#111; }
-
-  a { color:#111; }
-  a:focus { outline:thin dotted; }
-  a:active, a:hover { outline:0; }
   [rel="home"] { font-weight:bold; }
-  
+
+  .site-header { margin:0; padding:.2em 0 .4em; }
+  article > :not(header) a:hover { text-decoration:none; background-color: var(--nite); color: var(--lite); }
+  .dark a:hover { text-decoration:none; background-color: var(--lite); color: var(--nite); }
+
   main { display:block; margin:0; padding-top:1em; padding-bottom:1em; }
-  main a:hover {  /*text-decoration:none;*/ }
-  
-  .dark main, .dark main a { background-color:#111; color:#efefef; }
-  
+  .dark main, .dark main a { background-color: var(--lite); color: var(--nite); }
+
   h1.entry-title {
-    font-size:2em; padding:0; margin:0; line-height:1; 
+    font-size:2em; padding:0; margin:0; line-height:1;
   }
   h1.entry-title a {}
   h1.entry-title:before {}
-  
+
   .site-title { line-height:1; margin:.2em 0 }
   .site-title a { text-decoration:none; }
   .site-title span { display:inline-block; }
@@ -49,16 +52,16 @@
     text-transform:lowercase;
     padding:.055em;
     /*border-radius:.5em;*/
-    background-color:#111; color:#efefef;
+    background-color: var(--nite); color: var(--lite);
   }
 
   @media (min-width:30em) {
      .site-title { font-size:2.618em; }
   }
-  
+
   /* see @link css3base.com/css/fit.css */
   img { max-width:100%; height:auto; }
-  @media \0screen { img { width: auto } } 
+  @media \0screen { img { width: auto } }
 </style>
 
 <header class="site-header" role="banner">
