@@ -2,7 +2,7 @@
   "name": "subpicture.com",
   "version": "0.1.0",
   "description": "Photo project website.",
-  "main": "index.js",
+  "main": "index.html",
   "author": "Ryan Van Etten",
   "license": "CC-BY-SA-4.0",
   "homepage": "subpicture.com",
