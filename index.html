@@ -27,6 +27,10 @@
     padding: 2em;
     max-width: 960px;
   }
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
   .m-auto { margin: auto }
   .m-duct { margin-top: 1rem }
   .m-duck { margin-bottom: 1rem }
@@ -36,17 +40,6 @@
   :focus { outline-color: currentColor }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; }
   a:hover { text-decoration:underline }
-  .werd1 {
-    padding: .055em;
-    background-color: HotPink;
-    color: var(--nite);
-  }
-  .werd2 {
-    padding: .055em;
-    background-color: DarkOrange;
-    color: var(--nite);
-  }
-
   @media (min-width:30em) {
     .site-title { font-size:2.618em; }
   }
@@ -58,9 +51,33 @@
 
 <header class="m-duck">
   <h1 class="site-title m-auto m-duck">
-    <a href="" rel="home"><span class="werd1">sub</span><wbr><span class="werd2">picture</span></a>
+    <a href="" rel="home">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        width="160"
+        height="160"
+        viewBox="0 0 1600 1600"
+        style="border-radius:50%; display:inline;">
+        <title>subpicture</title>
+        <rect x="0" y="0" width="1600" height="1600" fill="yellow" />
+        <text x="100" y="890" fill="indigo" textLength="1400px" font-family="arial,sans-serif" font-weight="700" font-size="900px">sub</text>
+        <text x="100" y="1100" fill="indigo" textLength="1000px" font-family="arial,sans-serif" font-weight="700" font-size="344px">picture</text>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        width="160"
+        height="160"
+        viewBox="0 0 1600 1600"
+        style="border-radius:50%; display:none;">
+        <title>subpicture</title>
+        <rect x="0" y="0" width="1600" height="1600" fill="yellow" />
+        <text x="100" y="890" fill="indigo" textLength="1400px" font-family="arial,sans-serif" font-weight="700" font-size="900px">sub</text>
+        <text x="100" y="1220" fill="indigo" textLength="1400px" font-family="arial,sans-serif" font-weight="700" font-size="556px">picture</text>
+      </svg>
+    </a>
   </h1>
 </header>
+
 <div class="m-down">
   <p class="m-auto">San Francisco photo project ETA EOY 2018
   <p class="m-auto">Creator is Ryan Van Etten who made <a href="http://amplifiedny.com">AmplifiedNY</a>
