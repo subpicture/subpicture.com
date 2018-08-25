@@ -6,20 +6,28 @@
 <meta name=description content="Subpicture is a photo project by Ryan Van Etten currently in San Francisco">
 <meta name=author content="Ryan Van Etten">
 <style>
-  ::-moz-selection { background: var(--bee); color: var(--nite) }
-       ::selection { background: var(--bee); color: var(--nite) }
-  :root {
-    --bee: #ee0;
-    --nite: #111;
-    --lite: #efefef;
-    background-color: var(--nite);
-    color: var(--lite);
-  }
+::-moz-selection { background: springgreen; color: black }
+     ::selection { background: springgreen; color: black }
+
+ :root {
+  --nite: #111;
+  --lite: #efefef;
+ }
+
+ @supports (--live:1) {
+   :root {
+      background: var(--nite);
+      color: var(--lite);
+   }
+ }
+
   html {
+    background: #111;
+    color: #efefef;
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
   }
+
   body {
     margin: 0 auto;
     font-size: 1.25em;
@@ -27,30 +35,19 @@
     padding: 2em;
     max-width: 960px;
   }
-  svg {
-    max-width: 100%;
-    height: auto;
-  }
-  .m-auto { margin: auto }
-  .m-duct { margin-top: 1rem }
-  .m-duck { margin-bottom: 1rem }
-  .m-down { margin-bottom: 2rem }
-  :link,
-  :visited { background-color: inherit; color: inherit }
-  :focus { outline-color: currentColor }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; }
-  a:hover { text-decoration:underline }
-  @media (min-width:30em) {
-    .site-title { font-size:2.618em; }
-  }
 
-  /* see @link css3base.com/css/fit.css */
-  img { max-width:100%; height:auto; }
-  @media \0screen { img { width: auto } }
+  img, svg { max-width: 100%; height: auto }
+  :link, :visited { background-color: inherit; color: inherit }
+  :focus { outline-color: currentColor }
+
+  .m-auto { margin: auto }
+  .m-1up { margin-top: 1rem }
+  .m-1down { margin-bottom: 1rem }
+  .m-2down { margin-bottom: 2rem }
 </style>
 
-<header class="m-duck">
-  <h1 class="site-title m-auto m-duck">
+<header class="m-2down">
+  <h1 class="site-title m-auto m-2down">
     <a href="" rel="home">
       <svg xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -78,7 +75,7 @@
   </h1>
 </header>
 
-<div class="m-down">
+<div class="m-2down">
   <p class="m-auto">San Francisco photo project ETA EOY 2018
   <p class="m-auto">Creator is Ryan Van Etten who made <a href="http://amplifiedny.com">AmplifiedNY</a>
   <p class="m-auto">Deets to come via
@@ -92,7 +89,7 @@
     alt="4ward eyes of subpicture. black and white."
     src="https://user-images.githubusercontent.com/949985/44307504-85ada780-a358-11e8-8928-5fb30c6ac937.png"
     width="2320">
-  <figcaption class="m-duct">
+  <figcaption class="m-1up">
     <cite>4ward eyes</cite> in San Francisco summer 2018
     <br>In frame: Ryan Van Etten
     <br>See you soon. Thanks for checking this out!
