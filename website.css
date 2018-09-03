@@ -32,6 +32,8 @@ img, svg { max-width: 100%; height: auto }
 :link, :visited { background-color: inherit; color: inherit }
 :focus { outline-color: currentColor }
 
+.case-lower { text-transform: lowercase }
+.case-upper { text-transform: uppercase }
 .decor-none { text-decoration: none }
 .m-auto { margin: auto }
 .m-1up { margin-top: 1rem }
