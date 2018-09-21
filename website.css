@@ -2,8 +2,8 @@
    ::selection { background: springgreen; color: black }
 
 :root {
---nite: #111;
---lite: #efefef;
+--nite: #bae;
+--lite: #415;
 }
 
 @supports (--live:1) {
